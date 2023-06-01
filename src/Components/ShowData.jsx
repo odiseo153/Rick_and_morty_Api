@@ -2,12 +2,14 @@ import React from 'react'
 
 function ShowData( {nombre,imagen,creacion,origin,ubicacion,status} ) {
   return (
-    <div>
+    <div style={{
+backgroundImage:'https://images.wallpapersden.com/image/download/rick-and-morty-in-outer-space_bGdrbmuUmZqaraWkpJRmbmdlrWZlbWU.jpg'
+}}>
      <div className="card">
       <div className="info">
        <div className="name">{nombre}</div>
         <div className="bio">
-          Created:
+          Created:  
           {creacion}
           <br />
           <hr />

@@ -2,11 +2,6 @@ import { useState,useEffect } from 'react'
 import React from 'react'
 import ShowData from './ShowData'
 
-
-
-
-
-
 export default function DataGet() {
 
 const [datas,SetData] = useState([])
@@ -31,9 +26,9 @@ return (
   <br />
   <h2 style={{color:"red"}}>Seleccione una Pagina</h2>
 
-<div id='campo'>
-<label></label>
-<input type='text' id='campo' onChange={e =>SetPagina(e.target.value)}/>
+<div className='campo'>
+<label>!!MAX 41</label> <br />
+<input type='number' min='1' max='41' id='campo' onChange={e =>SetPagina(e.target.value)}/>
 </div>
 
 
